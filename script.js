@@ -11,7 +11,7 @@ const gencampChoice = () => {
     return options[randIdx];
 }
 
-const drawGame = () => {
+const drawGame = () => { 
     message.innerText = "Game was Draw";
     document.getElementsByClassName("result-msg")[0].style.backgroundColor = "#c38edc"
 }
