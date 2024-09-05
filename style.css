@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: darkslateblue;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 18px 0;
+}
+
+.choices{
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 54px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choices .choice img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.choices .choice img:hover{
+    scale: 1.2;
+}
+
+.counter{
+    max-width: 150px;
+    width: 100%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.counter .count{
+    text-align: center;
+}
+.count p{
+    font-size: 44px;
+    font-weight: 700;
+}
+.count span{
+    font-size: 22px;
+}
+.result-msg{
+    font-size: 28px;
+    width: fit-content;
+    margin: 40px auto;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    padding: 12px;
+    background-color: blueviolet;
+}
+
+.user-lose{
+    background-color: red;
+}
+
+.user-win{
+    background-color: green;
+}
+
+@media screen and (max-width : 567px) {
+    .choices{
+        flex-direction: column;
+    }
+}
